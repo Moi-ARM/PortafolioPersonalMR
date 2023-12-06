@@ -1,0 +1,377 @@
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Quicksand:wght@500&display=swap');
+
+html{
+    background-color: white;
+}
+
+/* Barra de Navegacion */
+
+.navbar {
+    padding: 2rem;
+    background-color:aliceblue;
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilos Generales Seccion Hero y Sección About Me*/
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.seccionTitulo{
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family:'Playfair Display', serif;
+    font-weight: bold;
+}
+
+.seccionTexto{
+    font-size: 1.2rem;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.btn-dark {
+    font-size: 1.1rem;
+    margin: 20px;
+}
+
+/* Seccion Hero */
+
+.hero{
+    font-family:'Playfair Display', serif;
+    color: black;
+    background-color: white;
+    min-height: 450px;
+    text-align: center;
+}
+
+.hero-principal{
+    padding: 2rem;
+}
+
+.hero-perfil{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 25px;
+    border: 3px solid black;
+    box-shadow: 0px 0px 1px black;
+}
+
+.hero-principal h1 {
+    font-size: 2.5rem;
+}
+
+.hero-principal h2 {
+    font-size: 1rem;
+}
+
+.hero-secundario i {
+    font-size: 30px;
+    padding: 5px;
+}
+
+/* Seccion About Me */
+
+.aboutMe{
+    height: 450px; /* Tamaño de contenedor seccion aboutMe */
+    padding: 20px;
+}
+
+.aboutMe .contenedor {
+    max-width: 600px;
+    text-align: center;
+    justify-content: center;
+}
+
+.seccionOscura{
+    color: white;
+    background-color: black;
+}
+
+/* Seccion Experiencia */
+
+.experiencia{
+    padding: 40px 40px 60px 40px;
+}
+
+.seccionClara{
+    color: black;
+    background-color:rgb(13, 110, 253);
+}
+
+.experienciaTitulo{
+    margin: 10px 0;
+    font-size: 25px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+.badges-contenedor{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badge {
+    margin: 10px;
+}
+
+.experiencia i{
+    font-size: 2.5rem;
+    color: rgb(13, 110, 253);
+    background-color: black;
+    padding: 8px 16px;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+.columna:hover i{
+    color: black;
+    background-color: white;
+}
+
+.experiencia .columna {
+    background-color: white;
+    padding: 20px;
+    border: 8px double black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover {
+    color: white;
+    background-color: black;
+    border: 8px solid white;
+}
+
+.regreso-fi .regreso-fixed i{
+    font-size: 20px;
+    padding: 7px;
+    border-radius: 0;
+    background-color: transparent;
+    color: rgb(13, 110, 253);
+    position: relative;
+}
+
+/* Projects */
+
+.proyectos {
+    padding: 40px;
+}
+
+.proyectos .seccionTitulo {
+    font-weight: bold;
+}
+
+.textoNegro {
+    color: black;
+}
+
+.textoBlanco {
+    color: white;
+}
+
+.proyectosRecientes img {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+.proyectoContenedor {
+    padding-top: 10px;
+    margin-bottom: 40px;
+}
+
+.overlay {
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.proyecto {
+    position: relative;
+}
+
+/* Cuando cursor esté sobre elemento .proyecto se le aplica a overlay: */
+.proyecto:hover .overlay {
+    opacity: 1;
+}
+
+/* Cuando cursor esté sobre elemento .proyecto se le aplica a overlay */
+.proyecto:hover img {
+    opacity: 0.2;
+}
+
+.overlay .iconos-contenedor {
+    display: flex;
+}
+
+.overlay i {
+    color: black;
+    font-size: 50px;
+    margin: 10px;
+    align-items: center;
+}
+
+/* Contacto */
+
+.contacto .container {
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+}
+
+.contacto .rectangulo {
+    margin-top: -5rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px black;
+}
+
+.contacto .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contacto .descripcion {
+    color: black;
+    font-size: 1.2rem;
+}
+
+.contacto button{
+    color: black;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button i {
+    color: black;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover {
+    background-color: black;
+    color: white;
+}
+
+.contacto button:hover i{
+    color: white;
+}
+
+/* Pie de pagina */
+
+footer {
+    min-height: 500px;
+}
+
+.footer-icon {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+
+.footer-text {
+    font-size: 1.5rem;
+    padding: 20px;
+    margin: 30px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.iconos-redes-sociales a{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i{
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+    background-color: white;
+    border: 2px solid rgb(13, 110, 253);
+}
+
+.iconos-redes-sociales a:hover i{
+    color: rgb(13, 110, 253);
+}
+
+.derechosAuthor {
+    padding: 15px;
+    font-size: 15px;
+    color: dimgray;
+}
+
+/* Adaptable (Responsivo) */
+
+/* Ocultar logo de la barra de navegacion con Mediaquery
+Para dispositivos con un ancho máximo de 767, haz esto:*/
+@media screen and (max-width: 767px){
+    .navbar-brand{
+        display: none;
+    }
+}
+
+/* Iconos de proyectos mas pequeños */
+@media screen and (max-width: 400px){
+    .overlay p{
+        font-size: 18px;
+    }
+    .overlay i{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 324px){
+    .aboutMe{
+        height: 460px; /* Tamaño de contenedor seccion aboutMe */
+        padding: 20px;
+    }
+    .seccionTexto{
+        font-size: 1rem;
+        font-family: Verdana, Tahoma, sans-serif;
+    }
+}

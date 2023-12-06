@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!--Metadatos-->
+        <meta charset="utf-8">
+        <meta name="author" content="Moises Ramirez">
+        <meta name="description" content="Portafolio Personal">
+        <meta name="keywords" content="HTML, CSS, JavaScript, React, Bootstrap">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Título-->
+        <title>Portafolio by Moises Ramirez</title>
+        <!--Link a CSS-->
+        <link rel="stylesheet" href="css/style.css">
+        <!--Bootstrap .css y icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+        <!--Link Favicon-->
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    </head>
+    <body>
+        <!-- Barra de Navegacion -->
+        <nav id="navbarmain" class="navbar navbar-expand-md navbar-light bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-toggler">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/control-de-juego.png" width="30" alt="logo Portafolio">
+                    </a>
+                    <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#sobreMi">
+                                <i class="bi bi-person-fill"></i>
+                                About me
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#exp">
+                                <i class="bi bi-graph-up-arrow"></i>
+                                Experience
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#proj">
+                                <i class="bi bi-pc-display-horizontal"></i>
+                                Projects
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#cont">
+                                <i class="bi bi-telephone-plus-fill"></i>
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Seccion Hero -->
+        <section id="her" class="hero align-items-stretch">
+            <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+                <img class="hero-perfil" src="img/foto_personal_recortada.jpeg" alt="Foto de Moises Ramirez">
+                <h1>Moises Ramirez</h1>
+                <h2>Junior Web Developer</h2>
+            </div>
+            <div class="hero-secundario d-flex flex-column justify-content-center align-items-center">
+                <i class="bi bi-caret-down-square-fill"></i>
+            </div>
+        </section>
+        <!-- Seccion About Me -->
+        <section id="sobreMi" class="aboutMe seccionOscura">
+            <div class="contenedor">
+                <h2 class="seccionTitulo">About Me</h2>
+                <p class="seccionTexto">
+                    I am a junior programmer studying and practicing the branch of backend developer, I am still a university student studying Systems Engineering 
+                    but with multiple personal projects already completed and others in process, specializing and working more every day to continue working and 
+                    perfecting my skills in this world. What I love!
+                </p>
+            </div>
+        </section>
+        <!-- Seccion de Experiencia -->
+        <section id="exp" class="experiencia seccionClara">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="columna col-12 col-md-4">
+                        <i class="bi bi-laptop"></i>
+                        <p class="experienciaTitulo">Web Development</p>
+                        <p>I mainly make sure that everything the frontend developer creates is fully functional, every day I learn a new way to use programming technology.  Additionally, on some occasions I usually bring the web designer's design to life using technologies such as:</p>
+                        <div class="badges-contenedor">
+                            <span class="badge rounded-pill text-bg-dark">HTML</span>
+                            <span class="badge rounded-pill text-bg-dark">CSS</span>
+                            <span class="badge rounded-pill text-bg-dark">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="columna col-12 col-md-4">
+                        <i class="bi bi-journal-text"></i>
+                        <p class="experienciaTitulo">Projects</p>
+                        <p>As a backend developer I deal with what happens "behind the scenes" of a website, working on the server side. Using various methods and elements I have carried out some personal projects to put my knowledge into practice, some fundamental elements can be:</p>
+                        <div class="badges-contenedor">
+                            <span class="badge rounded-pill text-bg-dark">Class</span>
+                            <span class="badge rounded-pill text-bg-dark">Function</span>
+                            <span class="badge rounded-pill text-bg-dark">Events</span>
+                        </div>
+                    </div>
+                    <div class="columna col-12 col-md-4">
+                        <i class="bi bi-highlighter"></i>
+                        <p class="experienciaTitulo">Estudies</p>
+                        <p>The systems engineering degree has given me the foundations of various programming languages, however, I decide to look further and read articles and documentation about the languages that interest me the most, since I am a self-taught person and I do not simply stick with what initial.</p>
+                        <div class="badges-contenedor">
+                            <span class="badge rounded-pill text-bg-dark">University</span>
+                            <span class="badge rounded-pill text-bg-dark">Documentation</span>
+                            <span class="badge rounded-pill text-bg-dark">Autodidact</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Seccion de Proyectos -->
+        <section id="proj" class="proyectosRecientes seccionClara d-flex flex-column">
+            <h2 class="seccionTitulo textoNegro">My Projects</h2>
+            <div class="container text-center proyectoContenedor">
+                <div class="row">
+                    <!-- Proyecto 1 -->
+                    <div class="col-12 col-md-6">
+                        <div class="proyecto">
+                            <img src="img/Proyecto1.jpg" alt="Proyecto 1">
+                            <div class="overlay">
+                                <p>Digital Clock</p>
+                                <div class="iconos-contenedor">
+                                    <a href="https://github.com/Moi-ARM/ProyectoRelojDigitalSimple" target="_blank" rel="noopener noreferrer">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                    <a href="https://moi-arm.github.io/ProyectoRelojDigitalSimple/" target="_blank" rel="noopener noreferrer">
+                                        <i class="bi bi-browser-chrome"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                    <!-- Proyecto 2 -->
+                    <div class="col-12 col-md-6">
+                        <div class="proyecto">
+                            <img src="img/Proyecto2.png" alt="Proyecto 2">
+                            <div class="overlay">
+                                <p>Budget Control</p>
+                                <div class="iconos-contenedor">
+                                    <a href="https://github.com/Moi-ARM/ProyectoPresupuestoPersonal" target="_blank" rel="noopener noreferrer">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                    <a href="https://moi-arm.github.io/ProyectoPresupuestoPersonal/" target="_blank" rel="noopener noreferrer">
+                                        <i class="bi bi-browser-chrome"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Moi-ARM" target="_blank" rel="noopener noreferrer">
+                <button type="button" class="btn btn-dark">
+                    More Projects Here
+                    <i class="bi bi-arrow-right-circle-fill"></i>
+                </button>
+            </a>
+        </section>
+        <!-- Seccion de Contacto -->
+        <section id="cont" class="contacto seccionOscura">
+            <div class="container">
+                <div class="container text-center d-flex justify-content-evenly rectangulo">
+                    <div class="row">
+                        <div class="col-12 col-md-4 seccionTitulo textoNegro">
+                            ¡lets chat!
+                        </div>
+                        <div class="col-12 col-md-4 descripcion">
+                            Contact me to start a web development project together.
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <a href="mailto: moisesarcangel30@gmail.com">
+                                <button type="button">
+                                    Contact
+                                    <i class="bi bi-envelope-arrow-up-fill"></i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Seccion de Footer y Redes Sociales -->
+        <footer id="foo" class="seccionOscura d-flex flex-column align-items-center justify-content-center">
+            <img class="footer-icon" src="img/control-de-juego.png" alt="Logo de Portafolio">
+            <p class="footer-text text-center">I learn and start a project every day.<br>Let's never stop learning.</p>
+            <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+               <a href="https://twitter.com/_MoisesRamirez_" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-twitter"></i>
+               </a>
+               <a href="https://github.com/Moi-ARM" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-github"></i>
+               </a>
+               <a href="www.linkedin.com/in/moises-ramirez-4b253b296" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-linkedin"></i>
+               </a>
+               <a href="mailto: moisesarcangel30@gmail.com" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-envelope-at-fill"></i>
+               </a>
+            </div>
+            <div class="derechosAuthor">Created by Moises Ramirez (2023) &#169;</div>
+            <div class="regreso-fi">
+                <div class="regreso-fixed">
+                    <a href="#navbarmain">
+                    <i class="bi bi-arrow-up-circle-fill"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <!--Bootstrap .js-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+</html>
